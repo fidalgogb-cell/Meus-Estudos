@@ -1,5 +1,3 @@
-# Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações possíveis sobre ele.
-
 x = input('Digite algo:')
 tp = type(x)
 n = x.isnumeric()
@@ -15,7 +13,5 @@ print('É alfanumérico? {}'.format(an))
 print('Está em maiúsculas? {}'.format(u))
 print('Está em minúsculas? {}'.format(l))
 print('Está capitalizada? {}'.format(c))
-
 # Exemplo sem usar a máscara:
-
 print('Só tem espaços?', x.isspace())
