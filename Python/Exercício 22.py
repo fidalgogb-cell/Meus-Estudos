@@ -1,0 +1,6 @@
+nome = str(input('Digite seu nome completo:')).strip()
+print(nome.lower())
+print(nome.upper())
+print('Seu nome completo contém {} caracteres.'.format(len(nome) - nome.count(' ')))
+print('Seu primeiro nome contém {} caracteres.'.format(nome.find(' ')))
+# print('Seu primeiro nome contém {} caracteres.'.format(len(nome.split()[0])))
