@@ -8,7 +8,7 @@ if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
     elif r1 == r2 or r1 == r3 or r2 == r3:
         print('isósceles: dois lados são iguais.')
     else:
-        # r1 != r2 != r3 != r1
+    # elif r1 != r2 != r3 != r1:
         print('escaleno: todos os lados são diferentes.')
 else:
     print('Não é possivel formar um triângulo.')
