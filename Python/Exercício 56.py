@@ -3,17 +3,14 @@ maisvelho = 0
 nomemaisvelho = ''
 contador = 0
 for pessoa in range(1, 5):
-    nome = str(input('Digite o nome da {}ª pessoa: '.format(pessoa)))
+    nome = str(input('Digite o nome da {}ª pessoa: '.format(pessoa))).strip()
     idade = int(input('Digite a idade da {}ª pessoa: '.format(pessoa)))
-    sexo = int(input('''Qual é o seu sexo?
-    [1] Feminino
-    [2] Masculino
-    Sua escolha: '''))
+    sexo = str(input('Sexo [F/M]: ')).strip().upper()
     somaidade += idade
-    if sexo == 2 and idade > maisvelho:
+    if sexo == 'M' and idade > maisvelho:
         maisvelho = idade
         nomemaisvelho = nome
-    elif sexo == 1 and idade < 20:
+    elif sexo == 'F' and idade < 20:
         contador += 1
 media = somaidade / 4
 print('A média de idade do grupo é de {} anos.'.format(media))
